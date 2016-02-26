@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<LINK href="orange.css" rel="stylesheet" type="text/css" media="screen">
+<LINK href="print.css" rel="stylesheet" type="text/css" media="print">
+<SCRIPT LANGUAGE="javascript" src="contact.js"></SCRIPT>
+<SCRIPT LANGUAGE="javascript" src="cookies.js"></SCRIPT>
+<SCRIPT LANGUAGE="javascript" src="scripts.js"></SCRIPT>
+<script type="text/javascript">
+<!--
+function subit(x) {
+	var el=document.forms[0].submit;
+	if(x==1) el.disabled=true;
+	if(x==2) {el.disabled=false; el.value=' שלח/י הזמנה ';}
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function YY_checkform() { //v4.71
+//copyright (c)1998,2002 Yaromat.com
+  var a=YY_checkform.arguments,oo=true,v='',s='',err=false,r,o,at,o1,t,i,j,ma,rx,cd,cm,cy,dte,at;
+  for (i=1; i<a.length;i=i+4){
+    if (a[i+1].charAt(0)=='#'){r=true; a[i+1]=a[i+1].substring(1);}else{r=false}
+    o=MM_findObj(a[i].replace(/\[\d+\]/ig,""));
+    o1=MM_findObj(a[i+1].replace(/\[\d+\]/ig,""));
+    v=o.value;t=a[i+2];
+    if (o.type=='text'||o.type=='password'||o.type=='hidden'){
+      if (r&&v.length==0){err=true}
+      if (v.length>0)
+      if (t==1){ //fromto
+        ma=a[i+1].split('_');if(isNaN(v)||v<ma[0]/1||v > ma[1]/1){err=true}
+      } else if (t==2){
+        rx=new RegExp("^[\\w\.=-]+@[\\w\\.-]+\\.[a-zA-Z]{2,4}$");if(!rx.test(v))err=true;
+      } else if (t==3){ // date
+        ma=a[i+1].split("#");at=v.match(ma[0]);
+        if(at){
+          cd=(at[ma[1]])?at[ma[1]]:1;cm=at[ma[2]]-1;cy=at[ma[3]];
+          dte=new Date(cy,cm,cd);
+          if(dte.getFullYear()!=cy||dte.getDate()!=cd||dte.getMonth()!=cm){err=true};
+        }else{err=true}
+      } else if (t==4){ // time
+        ma=a[i+1].split("#");at=v.match(ma[0]);if(!at){err=true}
+      } else if (t==5){ // check this 2
+            if(o1.length)o1=o1[a[i+1].replace(/(.*\[)|(\].*)/ig,"")];
+            if(!o1.checked){err=true}
+      } else if (t==6){ // the same
+            if(v!=MM_findObj(a[i+1]).value){err=true}
+      }
+    } else
+    if (!o.type&&o.length>0&&o[0].type=='radio'){
+          at = a[i].match(/(.*)\[(\d+)\].*/i);
+          o2=(o.length>1)?o[at[2]]:o;
+      if (t==1&&o2&&o2.checked&&o1&&o1.value.length/1==0){err=true}
+      if (t==2){
+        oo=false;
+        for(j=0;j<o.length;j++){oo=oo||o[j].checked}
+        if(!oo){s+='* '+a[i+3]+'\n'}
+      }
+    } else if (o.type=='checkbox'){
+      if((t==1&&o.checked==false)||(t==2&&o.checked&&o1&&o1.value.length/1==0)){err=true}
+    } else if (o.type=='select-one'||o.type=='select-multiple'){
+      if(t==1&&o.selectedIndex/1==0){err=true}
+    }else if (o.type=='textarea'){
+      if(v.length<a[i+1]){err=true}
+    }
+    if (err){s+='* '+a[i+3]+'\n'; err=false}
+  }
+  if (s!='') {alert('לצערנו אין באפשרותנו לשלוח את הטופס מהסיבות הבאות:\t\t\n\n'+s); subit(2);}
+  document.MM_returnValue = (s=='');
+}
+
+<!-- else document.getElementById("note").innerHTML="<p>אם אינכם מתקדמים לעמוד 'תודה על הזמנתכם' תוך מספר שניות ייתכן שאינכם מחוברים לאינטרנט או שהגישה של מצגת זו לאינטרנט נחסמת על ידי המחשב שלכם.</p><p>במקרה כזה באפשרותכם ללחוץ על F5 על מנת לרענן עמוד זה (בלי לאבד את הנתונים שמילאתם) ולנסות שוב או הדפיסו עמוד זה ושלחו ההזמנה בפקס.</p>"; -->
+ 
+function repopme() {
+	var k=document.cookie.split(";");
+	if(top.location.search.indexOf("order=")!=-1) document.getElementById("know").innerHTML="<p class=sans><b>הפעילויות שבחרתם נרשמו ויכללו בהזמנה</b></p><p>לעדכון הפעילויות שבחרתם:<br><a href=javascript:top.location='yesodi.htm?o'>בתי ספר יסודיים</a>, <a href=javascript:top.location='benayim.htm?o'>חטיבות ביניים</a>, <a href=javascript:top.location='tichon.htm?o'>תיכונים</a></p>";
+	if(document.cookie!="") {
+		for(i=0;i<k.length;i++) {
+	//		alert(k[i]);
+			if(k[i].indexOf("date")!=-1) document.getElementById("date").value=k[i].split("=")[1];
+			if(k[i].indexOf("Know")!=-1) {document.getElementById("KnowWhat").checked=true; 					 know();}
+			if(k[i].indexOf("time")!=-1) document.getElementById("time").selectedIndex=k[i].split("=")[1];
+			if(k[i].indexOf("length")!=-1) document.getElementById("length").selectedIndex=k[i].split("=")[1];
+		}
+		document.getElementById("SchoolName").focus();
+	}
+}
+
+function alertit() {
+	var a = document.getElementById("which").value + "; " + document.getElementById("what").value + "; " + document.getElementById("what_time").value;
+	alert(a);
+}
+
+function testit() {
+	document.getElementById("gif").innerHTML="<img src=http://www.righthost.biz/yadtest.gif height=1 width=1 onload=conn() onerror=noconn()>";
+}
+
+function noconn() {
+	document.getElementById("sub").innerHTML="<input type='button' name='noconn' value='אין חיבור לאינטרנט או שהוא חסום למצגת זו\n(ניתן לבדוק את החיבור מחדש על ידי לחיצה על כפתור F5)' style='font:bold 1.1em sans-serif; margin-left:33px; width:455px;' disabled>";
+}
+
+function conn() {
+	document.getElementById("submit").disabled=false;
+	//innerHTML="<input type='submit' name='submit' id='submit' value=' שלח/י הזמנה ' style='font:bold 1.22em sans-serif; margin-left:33px;' onclick="this.value='שולח הזמנה...';">";
+}
+
+function chx() {
+	var $=document.getElementById;
+	if(document.MM_returnValue==true) if($("KnowWhat").checked!=true) {$("which").value=""; $("what").value=""; $("what_time").value="";}
+}
+//-->
+</script>
+</head>
+<body style="margin:0; background:#FFF6BF; direction:ltr;" onLoad="loadqs();repopme();testit();">
+<center><!-- -->
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:11px;" class="print">
+    <tr>
+      <td width="100" valign="top"><p><span style="font: bold 22px Tahoma,Arial,Helvetica,sans-serif;"><span style="font: bold 22px Tahoma,sans-serif;"><img src="images/60p.gif" width="84" height="77" align="left"  style="margin:8px 0 0 0;"></span></span></p>
+          <p>&nbsp;</p></td>
+      <td align="right" valign="top"><p><span style="font: bold 22px Tahoma,Arial,Helvetica,sans-serif;">אתר יד לשריון - <span style="color:#333">&nbsp;&nbsp;</span></span><img src="images/logo.gif" width="52" height="43" align="absmiddle" style="margin:11px 11px 6px 0;"><br>
+        <span style="font: bold 36pt Tahoma,sans-serif;">טופס הזמנה</span></p></td>
+    </tr>
+  </table>
+  <div id="ord-c" dir="rtl" align="center" class="sans">הזמנה זו <b>אינה</b> מהווה התחייבות סופית מצדכם לביצוע הביקור. &nbsp;תוך כשני ימי עבודה מחלקת התיאום של יד לשריון תשלח לכם פקס לאישור (הכולל מחירים). &nbsp;רק חתימתכם על פקס זה תהווה התחייבות הדדית וסופית לביצוע הביקור.</div>
+<span class="c4">
+<!--action="http://www.righthost.biz/yadforms.php"  -->
+</span>
+<!--	<script type="text/javascript">
+		function nogood() {
+			document.getElementById('submit').disabled=true;
+			document.getElementById('submit').value='שליחת ההזמנה נכשלה\nאנא הדפיסו ושלחו בפקס או לחצו F5 על מנת לרענן עמוד זה ולנסות שוב';
+		}
+    </script> -->
+<form action="http://www.righthost.biz/yadforms.php" method="post" name="Order" id="Order" dir="rtl" onSubmit="subit(1); YY_checkform('Order','date','#^\([0-9][0-9]\)\\-\([0-9][0-9]\)\\-\([0-9]{4}\)$#1#2#3','3','חסר תאריך ביקור (או שאינו בפורמט ####-##-##)','time','#q','1','נא לציין שעת הגעה','length','#q','1','נא לציין משך פעילות רצוי','SchoolName','#q','0','חסר שם בית הספר','Street','#q','0','חסרה כתובת בית הספר','City','#q','0','חסרה עיר בית הספר','Classes','#q','0','יש להכניס מספר כיתות לביקור','TotalStudents','#q','0','יש להכניס מספר תלמידים כולל לביקור','age','#q','1','נא לציין את גיל התלמידים','Name','#q','0','יש להכניס את שם מבצע ההזמנה','Job','#q','0','חסר תפקיד מבצע ההזמנה','PPhone','#q','0','חסר טלפון אישי של מבצע ההזמנה','Email','#S','2','חסר דואל של מבצע ההזמנה'); chx(); return document.MM_returnValue;">
+
+  <input name="send_to" type="hidden" value="">
+  <input name="subject" type="hidden" value="טופס הזמנה בתי ספר יד לשריון">
+  <input name="thx" type="hidden" id="thx" value="http://www.righthost.biz/yadthxo.htm">
+  <fieldset style="width:444px; display:block;">
+  <legend>&nbsp;פרטי הביקור</legend>
+  <p>&nbsp;תאריך:
+    <input name="תאריך" type="text" class="ctr" id="date" style="color:#999;" dir="ltr" onBlur="clearit(this,2);cookit(this);" onClick="clearit(this,1)" onKeyUp="allow(this,5)" value="##-##-####" size="10" maxlength="10">
+      <!-- onblur="dateit(this)" -->
+    &nbsp;&nbsp; שעת הגעה:
+    <select name="שעת_הגעה" id="time" style="width:66px;" onChange="document.cookie = this.id + '=' + this.selectedIndex">
+      <option selected>בחר/י</option>
+      <option value="08:30">08:30</option>
+      <option value="09:00">09:00</option>
+      <option value="09:30">09:30</option>
+      <option value="10:00">10:00</option>
+      <option value="10:30">10:30</option>
+      <option value="11:00">11:00</option>
+      <option value="11:30">11:30</option>
+      <option value="12:00">12:00</option>
+      <option value="12:30">12:30</option>
+      <option value="13:00">13:00</option>
+      <option value="13:30">13:30</option>
+      <option value="14:00">14:00</option>
+      <option value="14:30">14:30</option>
+      <option value="15:00">15:00</option>
+    </select><!--  
+ <br><input type="button" name="button" id="button" value="KILL" onClick="killAll()"> <input type="button" name="button" id="button" value="Cookies" onClick="alert(document.cookie)">
+  <input type="button" name="button2" id="button2" value="פעילות" onClick="alertit()"> -->
+  </p>
+  <p>אנחנו רוצים פעילות ל: </p>
+  <p>
+    <select name="משך_הפעילות" id="length" onChange="document.cookie = this.id + '=' + this.selectedIndex">
+      <option>בחר/י משך זמן...</option>
+      <option value="1.5">שעה וחצי</option>
+      <option value="2.0">שעתיים</option>
+      <option value="2.5">שעתיים וחצי</option>
+      <option value="3.0">שלוש שעות</option>
+      <option value="1.0">ארבע שעות</option>
+      <option value="שלם יום">יום שלם</option>
+      <option value="יומיים">יומיים</option>
+      <option value="שלושה ימים">שלושה ימים</option>
+    </select>
+  </p>
+  <p id="kl"><input type="CHECKBOX" name="יודעים_מה_רוצים" id="KnowWhat" value="כן" onClick="know()" onBlur="cookit(this)">&nbsp;<label for="KnowWhat" style="cursor:pointer">אנחנו כבר יודעים אלו פעילויות אנו רוצים</label></p>
+  <div id="know" style="display:none; width:400px; padding:3px; margin-top:0;">
+    <p>אנא עברו עכשיו לאחד מהטפסים הבאים, מלאו אותו ולחצו על הכפתור "צרף/י להזמנה" (אשר יחזירכם לכאן).  &nbsp;<a href="javascript:top.location='yesodi.htm?o'">בתי ספר יסודיים</a>, <a href="javascript:top.location='benayim.htm?o'">חטיבות ביניים</a>, <a href="javascript:top.location='tichon.htm?o'">תיכונים</a>.</p>
+  </div>
+  <input id="which" name="טבלת_פעילויות" type="hidden" value="">
+  <input id="what" name="פירוט_פעילויות" type="hidden" value="">
+  <input id="what_time" name="משך_פעילויות" type="hidden" value="">
+  </fieldset>
+  <fieldset>
+  <legend>פרטי בית הספר</legend>
+  <p>&nbsp;&nbsp;&nbsp; שם:
+    <input name="שם_ביהס" type="text" id="SchoolName" size="33" class="short">
+  </p>
+  <p>&nbsp;&nbsp;רחוב:
+    <input name="כתובת_ביהס" type="text" size="33" id="Street" class="short">
+      <br>
+     &nbsp; &nbsp; עיר:
+     <input name="עיר_ביהס" type="text" size="33" id="City" class="short">
+    <br>
+    &nbsp;מיקוד:
+    <input name="מיקוד_ביהס" type="text" id="Zip" onKeyUp="allow(this,4)" size="33" maxlength="5" class="short">
+  </p>
+  <p>&nbsp;טלפון:
+    <input name="טל_ביהס" type="text" class="ctr short" id="SchoolPhone" dir="ltr" onKeyUp="allow(this,2)" size="33" maxlength="14">
+      <br>
+      &nbsp; &nbsp;פקס:
+     <input name="פקס_ביהס" type="text" class="ctr short" id="SchoolFax" dir="ltr" onKeyUp="allow(this,2)" size="33" maxlength="14">
+  </p>
+  <p><img src="images/blank.gif" width="1" height="16"></p>
+  </fieldset>
+  <fieldset>
+  <legend>פרטי הקבוצה</legend>
+  <p> &nbsp;מספר כיתות:
+    <input name="מס'_כיתות" type="text" class="ctr" style="width:auto;" size="5" maxlength="2" onKeyUp="allow(this,4)" id="Classes">
+  </p>
+  <p>&nbsp;גיל התלמידים:
+    <select name="גיל_התלמידים" class="ctr" id="age" style="width:auto; text-align:center;">
+        <option selected>בחר/י...</option>
+        <option value="מעורב">מעורב</option>
+        <option value="א">כיתה א'</option>
+        <option value="ב">כיתה ב'</option>
+        <option value="ג">כיתה ג'</option>
+        <option value="ד">כיתה ד'</option>
+        <option value="ה">כיתה ה'</option>
+        <option value="ו">כיתה ו'</option>
+        <option value="ז">כיתה ז'</option>
+        <option value="ח">כיתה ח'</option>
+        <option value="ט">כיתה ט'</option>
+        <option value="י">כיתה י'</option>
+        <option value="יא">כיתה יא'</option>
+        <option value="יב">כיתה יב'</option>
+      </select>
+  </p>
+  <p>&nbsp;&nbsp;סה&quot;כ תלמידים:
+    <input name="סהכ_תלמידים" type="text" class="ctr" size="5" maxlength="3" onKeyUp="allow(this,4)" id="TotalStudents">
+    &nbsp;&nbsp;&nbsp; </p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp; מספר מורים:
+    <input name="מורים" type="text" class="ctr" size="5" maxlength="2" onKeyUp="allow(this,4)" id="Teachers">
+    &nbsp;&nbsp;&nbsp; </p>
+  <p>&nbsp;&nbsp; &nbsp; מספר מלווים:
+    <input name="מלווים" type="text" class="ctr" size="5" maxlength="2" onKeyUp="allow(this,4)" id="Melavim">
+    &nbsp;<a href="javascript:alert('מלווים בתפקיד כגון חובשים ומאבטחים חמושים.   ');"><img src="images/qmark.gif" width="14" height="14" border="0"></a></p>
+  <p>&nbsp;&nbsp; מספר מבוגרים:
+    <input name="מבוגרים" type="text" class="ctr" size="5" maxlength="2" onKeyUp="allow(this,4)" id="Adults">
+    &nbsp;<a href="javascript:alert('מבקרים מבוגרים המצטרפים לקבוצה, בדרך\nכלל הורים (לא כולל מלווים בתפקיד ומורים).\t');"><img src="images/qmark.gif" width="14" height="14" border="0"></a></p>
+  <a name="k"></a>
+  </fieldset><br>
+  <fieldset>
+  <legend>פרטי המזמין</legend>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; שם:
+    <input name="שם_המזמין" type="text" size="33" id="Name">
+  </p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; תפקיד:
+    <input name="תפקיד_המזמין" type="text" size="33" id="Job">
+  </p>
+  <p> &nbsp;טלפון אישי:
+    <input name="טלפון_המזמין" type="text" size="33" dir="ltr" class="ctr" onKeyUp="allow(this,2)" id="PPhone">
+  </p>
+  <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; דוא"ל:
+    <input name="דואל_המזמין" type="text" size="33" dir="ltr" class="ctr" id="Email">
+  </p>
+  </fieldset>
+  <br>
+  <fieldset>
+  <legend>קוד הנחה</legend>
+  <p><input name="קוד_הנחה" type="text" id="Coupon" value="מד-8" size="11" class="ctr"></p>
+  </fieldset>
+  <p class="noPrint"><div id="sub" class="noPrint"><input type="submit" name="submit" id="submit" value=" שלח/י הזמנה " style="font:bold 1.22em sans-serif; margin-left:33px;" onclick="this.value='שולח הזמנה...';" disabled><span class="sans noPrint"><br>דורש חיבור לאינטרנט &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br></span></div><p></p>
+  <p class="sans" dir="rtl" style="margin:0;"><span class="noPrint">לחלופין, ניתן <a href="javascript:printit(2);" id="print">להדפיס טופס זה</a> ולשלחו </span><span class="print"><br>
+    <br><br>
+  </span>לפקס 1059-928&nbsp;(08) &nbsp; &nbsp; &nbsp; &nbsp;</p>
+   <div id="gif"></div>
+</form>
+</center>
+</body>
+</html>

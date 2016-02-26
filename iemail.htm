@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<LINK href="orange.css" rel="stylesheet" type="text/css" media="screen">
+<SCRIPT LANGUAGE="javascript" src="contact.js"></SCRIPT>
+</head>
+<body style="margin:0; background:#FFF6BF; direction:ltr;">
+<div id="contact" style="text-align:center; direction:rtl;">
+<form action="http://www.righthost.biz/yadforms.php" method="post" name="ccontact" id="ccontact">
+  <input name="send_to" type="hidden" value="">
+  <input name="subject" type="hidden" value="דואל ממצגת יד לשריון">
+  <br>
+  <p>
+    <label>&nbsp;&nbsp;נושא:
+    <input name="About" type="text" id="About" size="33" class="input"></label></p>
+  <p><label>&nbsp; &nbsp; שם: 
+      <input name="Name" type="text" id="Name" size="33" class="input" onKeyUp="allow(this,1)"></label></p>
+  <p><label>דוא&quot;ל: 
+      <input name="Email" type="text" id="Email" size="33" class="input" style="text-align:center;" dir="ltr">
+  </label>
+  </p>
+  <p><label>&nbsp;טלפון: <input name="Phone" type="text" id="Phone" size="33" class="input" onKeyUp="allow(this,2)" style="text-align:center;" dir="ltr"></label></p>
+  <p><label> &nbsp; &nbsp;מסר:<br>
+    <textarea name="Msg" id="Msg" cols="33" rows="5"></textarea></label></p>
+  <p><input type="button" name="go" id="go" value="  שלח/י  " onclick="contact()"><br>(דורש חיבור לאינטרנט)                          </p>
+</form>
+<script type="text/javascript">
+ if(document.getElementById("Msg")) {
+    var dm=document.getElementById("Msg").style;
+    dm.scrollbarFaceColor="#aaa";
+    dm.scrollbarArrowColor="#eee";
+    dm.scrollbarTrackColor="#ddd";
+    dm.scrollbarShadowColor="#ccc";
+    dm.scrollbarDarkshadowColor="#eee";
+    dm.scrollbarHighlightColor="#eee";
+    dm.scrollbar3dLightColor="#ccc";
+ }
+</script>
+</div>
+</body>
+</html>
