@@ -8,44 +8,44 @@ if (TransMenu.isSupported()) {
 
 	var ms = new TransMenuSet(TransMenu.direction.down, top, 55, TransMenu.reference.bottomLeft); //top
 	var menu1 = ms.addMenu(document.getElementById("tafrit"));
-	menu1.addItem("ςαεψ μςξεγ");
-	menu1.addItem("ωπδ βεγμ λϊα&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
-	menu1.addItem("δγτρ ςξεγ...","javascript:printit()"); //07
-	menu1.addItem("ςζψδ / ΰεγεϊ", "about.htm");
+	menu1.addItem("ΧΆΧ‘Χ•Χ¨ ΧΧΆΧΧ•Χ“");
+	menu1.addItem("Χ©Χ Χ” Χ’Χ•Χ“Χ Χ›ΧªΧ‘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+	menu1.addItem("Χ”Χ“Χ¤Χ΅ ΧΆΧΧ•Χ“...","javascript:printit()"); //07
+	menu1.addItem("ΧΆΧ–Χ¨Χ” / ΧΧ•Χ“Χ•Χª", "about.htm");
 
 	var submenu0 = menu1.addMenu(menu1.items[0]);
-	submenu0.addItem("αψελιν δαΰιν", "javascript:pass('index2.htm')");		// 0
-	submenu0.addItem("μξδ ιγ μωψιεο αμθψεο?&nbsp;&nbsp;&nbsp;", "javascript:pass('why.htm')");
-	submenu0.addItem("βιωδ ηιπελιϊ", "javascript:pass('gisha.htm')"); 			
-	submenu0.addItem("τςιμεϊ μτι βιμ", "javascript:pass('byage.htm')");		//3 byage
-	submenu0.addItem("ριεψ ειψθεΰμι αΰϊψ", "javascript:pass('siyur0.htm')"); 		//4 siyur
-	submenu0.addItem("τςιμειεϊ περτεϊ", "javascript:pass('xtras.htm')"); 		//5 extra  
-	submenu0.addItem("ΰικ ξβιςιν", "javascript:pass('ech.htm')");
-	submenu0.addItem("ιφιψϊ χωψ", "javascript:pass('contact.htm')");
-	submenu0.addItem("θετρ δζξπδ", "javascript:pass('undefined.htm')");
+	submenu0.addItem("Χ‘Χ¨Χ•Χ›Χ™Χ Χ”Χ‘ΧΧ™Χ", "javascript:pass('index2.htm')");		// 0
+	submenu0.addItem("ΧΧΧ” Χ™Χ“ ΧΧ©Χ¨Χ™Χ•Χ Χ‘ΧΧΧ¨Χ•Χ?&nbsp;&nbsp;&nbsp;", "javascript:pass('why.htm')");
+	submenu0.addItem("Χ’Χ™Χ©Χ” Χ—Χ™Χ Χ•Χ›Χ™Χª", "javascript:pass('gisha.htm')"); 			
+	submenu0.addItem("Χ¤ΧΆΧ™ΧΧ•Χª ΧΧ¤Χ™ Χ’Χ™Χ", "javascript:pass('byage.htm')");		//3 byage
+	submenu0.addItem("Χ΅Χ™Χ•Χ¨ Χ•Χ™Χ¨ΧΧ•ΧΧΧ™ Χ‘ΧΧªΧ¨", "javascript:pass('siyur0.htm')"); 		//4 siyur
+	submenu0.addItem("Χ¤ΧΆΧ™ΧΧ•Χ™Χ•Χª Χ Χ•Χ΅Χ¤Χ•Χª", "javascript:pass('xtras.htm')"); 		//5 extra  
+	submenu0.addItem("ΧΧ™Χ ΧΧ’Χ™ΧΆΧ™Χ", "javascript:pass('ech.htm')");
+	submenu0.addItem("Χ™Χ¦Χ™Χ¨Χª Χ§Χ©Χ¨", "javascript:pass('contact.htm')");
+	submenu0.addItem("ΧΧ•Χ¤Χ΅ Χ”Χ–ΧΧ Χ”", "javascript:pass('undefined.htm')");
 
 		var submenu00 = submenu0.addMenu(submenu0.items[3]);
-		submenu00.addItem("δδγψλδ αΰϊψ", "javascript:pass('hadracha.htm')");
-		submenu00.addItem("μαϊι ρτψ ιρεγιιν&nbsp;&nbsp;&nbsp;&nbsp;", "javascript:pass('yesodi.htm')");
-		submenu00.addItem("μηθιαεϊ αιπιιν", "javascript:pass('benayim.htm')");
-		submenu00.addItem("μϊιλεπιν", "javascript:pass('tichon.htm')");
+		submenu00.addItem("Χ”Χ”Χ“Χ¨Χ›Χ” Χ‘ΧΧªΧ¨", "javascript:pass('hadracha.htm')");
+		submenu00.addItem("ΧΧ‘ΧªΧ™ Χ΅Χ¤Χ¨ Χ™Χ΅Χ•Χ“Χ™Χ™Χ&nbsp;&nbsp;&nbsp;&nbsp;", "javascript:pass('yesodi.htm')");
+		submenu00.addItem("ΧΧ—ΧΧ™Χ‘Χ•Χª Χ‘Χ™Χ Χ™Χ™Χ", "javascript:pass('benayim.htm')");
+		submenu00.addItem("ΧΧªΧ™Χ›Χ•Χ Χ™Χ", "javascript:pass('tichon.htm')");
 
 		var submenu01 = submenu0.addMenu(submenu0.items[4]);
-		submenu01.addItem("ριεψ ειψθεΰμι αΰϊψ&nbsp;&nbsp;&nbsp;&nbsp;", "javascript:pass('siyur0.htm')");
-		submenu01.addItem("ϊφτιϊ ξερΰ", "musa.htm");
-		submenu01.addItem("ξεζιΰεο δθπχιν", "javascript:pass('tanks.htm')");
-		submenu01.addItem("ξλμεμ δζιλψεο", "javascript:pass('zikaron.htm')");
-		submenu01.addItem("ξιφβ δωψιεο", "javascript:pass('meizag.htm')");
-		submenu01.addItem("ϊςψελεϊ", "javascript:pass('taruhot.htm')");
-		submenu01.addItem("πετιν", "javascript:pass('nofim.htm')");
+		submenu01.addItem("Χ΅Χ™Χ•Χ¨ Χ•Χ™Χ¨ΧΧ•ΧΧΧ™ Χ‘ΧΧªΧ¨&nbsp;&nbsp;&nbsp;&nbsp;", "javascript:pass('siyur0.htm')");
+		submenu01.addItem("ΧªΧ¦Χ¤Χ™Χª ΧΧ•Χ΅Χ", "musa.htm");
+		submenu01.addItem("ΧΧ•Χ–Χ™ΧΧ•Χ Χ”ΧΧ Χ§Χ™Χ", "javascript:pass('tanks.htm')");
+		submenu01.addItem("ΧΧ›ΧΧ•Χ Χ”Χ–Χ™Χ›Χ¨Χ•Χ", "javascript:pass('zikaron.htm')");
+		submenu01.addItem("ΧΧ™Χ¦Χ’ Χ”Χ©Χ¨Χ™Χ•Χ", "javascript:pass('meizag.htm')");
+		submenu01.addItem("ΧªΧΆΧ¨Χ•Χ›Χ•Χª", "javascript:pass('taruhot.htm')");
+		submenu01.addItem("Χ Χ•Χ¤Χ™Χ", "javascript:pass('nofim.htm')");
 		
 		var submenu02 = submenu0.addMenu(submenu0.items[5]);
-		submenu02.addItem("θχρι αϊι ρτψ","javascript:pass('tkasim.htm')");
-		submenu02.addItem("ξδ\"γ ωμ\"η μθψεο", "javascript:pass('shelach.htm')"); // 1 shelach
-		submenu02.addItem("ϊπεςεϊ πεςψ", "javascript:pass('tnuot.htm')");
-		submenu02.addItem("δωϊμξειεϊ ρβμ", "javascript:pass('segel.htm')");
-		submenu02.addItem("ριες μϊμξιγιν αςαεγεϊ&nbsp;&nbsp;&nbsp;&nbsp;", "javascript:pass('marmad.htm')");
-		submenu02.addItem("χεψρ ξπδιβεϊ", "manhigut.htm");
+		submenu02.addItem("ΧΧ§Χ΅Χ™ Χ‘ΧªΧ™ Χ΅Χ¤Χ¨","javascript:pass('tkasim.htm')");
+		submenu02.addItem("ΧΧ”\"Χ“ Χ©Χ\"Χ— ΧΧΧ¨Χ•Χ", "javascript:pass('shelach.htm')"); // 1 shelach
+		submenu02.addItem("ΧªΧ Χ•ΧΆΧ•Χª Χ Χ•ΧΆΧ¨", "javascript:pass('tnuot.htm')");
+		submenu02.addItem("Χ”Χ©ΧªΧΧΧ•Χ™Χ•Χª Χ΅Χ’Χ", "javascript:pass('segel.htm')");
+		submenu02.addItem("Χ΅Χ™Χ•ΧΆ ΧΧªΧΧΧ™Χ“Χ™Χ Χ‘ΧΆΧ‘Χ•Χ“Χ•Χª&nbsp;&nbsp;&nbsp;&nbsp;", "javascript:pass('marmad.htm')");
+		submenu02.addItem("Χ§Χ•Χ¨Χ΅ ΧΧ Χ”Χ™Χ’Χ•Χª", "manhigut.htm");
 
 	var submenu1 = menu1.addMenu(menu1.items[1]);
 	submenu1.addItem("75%", "javascript:zum(.75)");
