@@ -23,7 +23,7 @@ document.write("<link href=\"" + scheme[1] + ".css\" rel=\"stylesheet\" type=\"t
 
 function pn(x)	{ // AUTO PREV-NEXT
 	var pages = new Array('index2','why','gisha','byage','hadracha','siyur0','musa','tanks','zikaron','meizag','taruhot','nofim','xtras','ech','contact','undefined');
-	var a=location.href.split("/schools/"); a=a[1].split(".htm"); var pgnm=a[0];  // get current page name
+	var a=location.href.split(".netlify.com/"); a=a[1].split(".htm"); var pgnm=a[0];  // get current page name
 	if (pgnm=="") pgnm="index2";
 	for(l=0;l<pages.length;l++) {		// loop through "pages" array for current page name
 		if (pages[l] == pgnm) {var prev=pages[l-1]+".htm"; var next=pages[l+1]+".htm"}
