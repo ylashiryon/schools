@@ -1,0 +1,27 @@
+
+.border {width:100%; border: solid 1px #000;}
+.ttl {font: bold 36pt /*"DL Apollo"*/ Tahoma,Arial,Helvetica,sans-serif; color:#000; padding: 0 20px 0 0;}
+.noPrint {display: none;} 
+.print {display: inline;}
+.outl {display:block;}
+.pnp1 {width:100%; padding: 20px 20px 0 0;}
+.pnp2 {width:100%;}
+.txt {padding: 0 0 0 30px;} /* 99 */
+.txt2 {font-size:1.25em; padding: 0 66px 0 44px;}
+.lgo {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/logo.jpg);}
+.pic {margin: 40px 30px 30px 40px;}
+.nop {display: none;}
+
+#f1 {margin:0 0 0 0;}
+
+.mtop {margin-top:22px}
+
+#ord-i {height:2222px; width:100%;}
+#ord-c {width:90%; margin:11px 0 11px;}
+
+.border {width:100%; border:none;}
+legend {font: bold 100% sans-serif; text-align:right;}
+fieldset {display:inline; padding:11px 33px; margin:11px 0 0 0;}
+fieldset select {font-size:.85em;}
+fieldset p {margin: 8px; font-size:1.1em;}
+fieldset .short {width:166px;}
